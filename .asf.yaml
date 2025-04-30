@@ -1,0 +1,6 @@
+## Staged at: at https://attic-old-website-asf-site.staged.apache.org
+
+# Try to disable test site
+staging:
+  profile: old-website-asf-site
+
