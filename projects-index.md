@@ -23,14 +23,14 @@ See the License for the specific language governing permissions and
 limitations under the License.
 {% endcomment %}
 
-## Retired Projects
+## [Retired Projects]({% link projects.md %})
 
 {% assign project_array = site.data.project_array |  where: "project_type", "PMC" -%}
 {%- for project in project_array -%}
 [{{project.project_name}}]({%- link {{project.project_id | prepend: "projects/" | append: ".html"}} -%}){: .btn style="font-family:SFMono-Regular;" }&nbsp;
 {% endfor -%}
 
-## Retired Sub-Projects
+## [Retired Sub-Projects]({% link subprojects.md %})
 
 {% assign subproject_array = site.data.project_array |  where: "project_type", "Subproject" -%}
 {%- for project in subproject_array -%}
