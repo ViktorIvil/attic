@@ -25,7 +25,7 @@ limitations under the License.
 ***
 
 {: .fs-5}
-This page lists all the **Sub-Projects** in The Apache Attic, for Projects see the
+This page lists all the **Sub-Projects** in The Apache Attic, see also the
 [Retired Projects page]({% link projects.md %}).
 
 {: .note}
