@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Retired Projects
+title: Retired Sub-Projects
 has_toc: false
-nav_order: 40
+nav_order: 45
 ---
 {%- comment -%}
 Licensed to the Apache Software Foundation (ASF) under one or more
@@ -21,15 +21,17 @@ See the License for the specific language governing permissions and
 limitations under the License.
 {% endcomment %}
 
-<h1>Retired Projects</h1>
+<h1>Retired Sub-Projects</h1>
 ***
 
 {: .fs-5}
-This page lists all the **Projects** in The Apache Attic, for Sub-Projects see the
-[Retired Sub-Projects page]({% link subprojects.md %}).
+This page lists all the **Sub-Projects** in The Apache Attic, for Projects see the
+[Retired Projects page]({% link projects.md %}).
 
+{: .note}
+Historically the Apache Attic accepted ***Sub-Projects***, but since 2014 this is no longer the case.
 
-{% assign project_array = site.data.project_array |  where: "project_type", "PMC" -%}
+{% assign project_array = site.data.project_array |  where: "project_type", "Subproject" -%}
 
 |Project|Type|Description|Retired|
 |:------|:---|:----------|:------|

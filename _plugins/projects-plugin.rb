@@ -52,12 +52,17 @@ module ProjectsPlugin
       # doesn't exist in the `data` hash.
       #data.default_proc = proc do |_, projname|
       #  site.frontmatter_defaults.find(relative_path, :projects, projname)
+      
+      parent = 'Retired Projects'
+      if project['project_type'] == 'Subproject'
+         parent = 'Retired Sub-Projects'
+      end
 
       # Define custom data.
       @data = project.clone
       @data['layout'] ='project-layout'
       @data['title'] = project['project_name']
-      @data['parent'] = 'Retired Projects'
+      @data['parent'] = parent
       @data['nav_order'] = index
       @data['has_toc'] = true
     end
