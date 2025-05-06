@@ -33,12 +33,12 @@ Historically the Apache Attic accepted ***Sub-Projects***, but since 2014 this i
 
 {% assign project_array = site.data.project_array |  where: "project_type", "Subproject" -%}
 
-|Project|Type|Description|Retired|
-|:------|:---|:----------|:------|
+|Project|Description|Retired|
+|:------|:----------|:------|
 {%- for project in project_array %}
 |{{forloop.index}}. [{{project.project_apachename}}](
    {%- link {{project.project_id | prepend: "projects/" | append: ".html"}} -%}
-)|{{project.project_type}}|{{project.project_shortdesc}}|{{project.retirement_date | date: "%b %Y"}}
+)|{{project.project_shortdesc}}|{{project.retirement_date | date: "%b %Y"}}
 {%- endfor %}
 
 
