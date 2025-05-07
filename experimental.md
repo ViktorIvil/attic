@@ -28,7 +28,7 @@ This branch has a number of changes, for consideration:
    - [Retired Projects](projects.html)
    - [Retired Sub-Projects](subprojects.html)
  1. A [Project Index](projects-index.html) page
- 1. This page showing [Mermaid Diagrams](https://mermaid.js.org/):
+ 1. This page showing [Mermaid Diagrams](https://just-the-docs.com/docs/ui-components/code/#mermaid-diagram-code-blocks):
    - [Attic Process Diagram](#attic-process-diagram)
    - [Project Retirements Graph](#project-retirements-graph)
    - [Project Retirements Timeline](#project-retirements-timeline)
