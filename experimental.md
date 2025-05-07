@@ -77,6 +77,10 @@ The following graph shows the number of Projects retiring for each year (**NOT**
 {% assign no_of_years = 20 -%}
 {% assign first = sorted_years | size | minus: no_of_years | at_least: 0 -%}
 {% assign second = first | plus: 1 -%}
+{% assign count_max = 0 -%}
+{%- for year in sorted_years offset: first -%}
+    {% assign count_max = count_max | at_least: year['p_count'] -%}
+{%- endfor %}
 
 {: .note}
 This is currently configured to show the last **{{ no_of_years}} years** of retirements (easily changed through the `$no_of_years` variable).
@@ -88,7 +92,7 @@ xychart-beta
      {%- for year in sorted_years offset: second -%}
        {{ year['year'] | prepend: ', '}}
      {%- endfor %}]
-    y-axis "Number of Projects" 0 --> 18
+    y-axis "Number of Projects" 0 --> {{count_max | plus: 2 | at_least: 10}}
     bar [{{ sorted_years[first]['p_count']}}
      {%- for year in sorted_years offset: second -%}
        {{ year['p_count'] | prepend: ', '}}
