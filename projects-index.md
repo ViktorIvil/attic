@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Project Index
+title: Index
+parent: The Apache Attic
 nav_exclude: false
-nav_order: 35
+nav_order: 10
 has_toc: false
 #permalink: projects/index
 ---
